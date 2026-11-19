@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: #EAF0FF;
+    color: #527BFF;
+  }
+}
+
+/* Custom background patterns and gradients */
+.bg-grid-pattern {
+  background-size: 36px 36px;
+  background-image: 
+    linear-gradient(to right, rgba(32, 36, 58, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(32, 36, 58, 0.035) 1px, transparent 1px);
+}
+
+.bg-dot-pattern {
+  background-size: 24px 24px;
+  background-image: radial-gradient(rgba(32, 36, 58, 0.08) 1.2px, transparent 1.2px);
+}
+
+/* Glassmorphism effects with light ivory tints */
+.glass-nav {
+  background: rgba(250, 249, 246, 0.85);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(32, 36, 58, 0.06);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(32, 36, 58, 0.07);
+}
+
+.glass-card-hover {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px -12px rgba(82, 123, 255, 0.15);
+  border-color: rgba(82, 123, 255, 0.3);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF9F6;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4D8E6;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A78BFA;
+}
+
+/* Subtle gradient text */
+.text-gradient-primary {
+  background: linear-gradient(135deg, #527BFF 0%, #A78BFA 50%, #FF827A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-blue {
+  background: linear-gradient(135deg, #527BFF 0%, #355ee8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-coral {
+  background: linear-gradient(135deg, #FF827A 0%, #fa6258 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Soft glowing blobs */
+.mesh-gradient-hero {
+  background: radial-gradient(circle at 85% 20%, rgba(82, 123, 255, 0.12) 0%, transparent 45%),
+              radial-gradient(circle at 15% 65%, rgba(255, 130, 122, 0.12) 0%, transparent 40%),
+              radial-gradient(circle at 60% 85%, rgba(167, 139, 250, 0.12) 0%, transparent 45%);
+}
+
