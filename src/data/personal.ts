@@ -2,7 +2,7 @@ export const personalData = {
   name: "Jayakrishna M.",
   shortName: "Jayakrishna",
   monogram: "JM",
-  avatar: "/jayakrishna.jpg",
+  avatar: "./jayakrishna.jpg",
   title: "Software Developer | AI Enthusiast | Technology Builder",
   location: "Tiruchirappalli, Tamil Nadu, India",
   tagline: "Building ideas into meaningful digital experiences.",
